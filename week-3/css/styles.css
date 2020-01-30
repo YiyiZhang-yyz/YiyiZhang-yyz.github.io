@@ -1,0 +1,46 @@
+section{
+    width:80%;
+    height:400px;
+    background-color:grey;
+    border:2px black solid;
+    margin: 0 auto;
+    /*placing display:flex on a container element
+    so the flexbox properties can be used on elements inside of it */
+    display:flex;
+    /*decide which way the contant should folw */
+    flex-direction:row; /* this is the default - from left to right*/
+
+    /*decide where the flowing content should start*/
+    justify-content:space-evenly;
+    /*justify content is dynamic and depends on the flex-direction*/
+
+    /*decide how the content should be aligned 
+    on the axis opposite the flow */
+    align-items:center;
+}
+
+div{
+    width:150px;
+    height:150px;
+    background-color:lightblue;
+    border:3px blue solid;
+    flex-grow:0;
+}
+
+div:nth-child(2){
+    /*"order" is a weighted property */
+    order:1;
+    /*flex-grow tells an element how to use the available space
+    based on the other elements around it
+    it overrides any width (or height) on the element*/
+    flex-grow:4;
+}
+
+div:nth-child(4){
+    /*for order, the default value is 0
+    lower numbers appear closer to the start of the flex direction
+    highter numbers appear closer to the end of the flex direction*/
+    order:-1;
+    /*align-self overrides the align-items container property*/
+    align-self:flex-start;
+}
