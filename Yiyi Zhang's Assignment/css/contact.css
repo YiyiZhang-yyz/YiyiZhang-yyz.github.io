@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+table {
+	border-collapse: collapse;
+}
+/** css reset **/
+
+
+
+
+
+
+
+/*Style of the font size of the whole page */
+body{
+    line-height:1.8;
+    font-family: 'Arial', serif;
+}
+/*Style of body container and navigation changed */
+.container{
+    background-color:lightyellow;
+}
+
+.site-header{
+    background-color:lightsalmon;   
+}
+
+.banner{
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.banner img{
+    grid-column: 1/3;
+    grid-row:1/3;
+    width:100%; 
+    border:none;
+}
+
+.banner h1{
+    grid-column: 1/3;
+    grid-row: 2/4;
+    z-index: 1; 
+    text-align: center;
+    font-size: 1.85rem;
+    margin:1.58rem auto;
+    font-weight: bold;
+    color:blue;
+}
+/*Style of header and section changed*/
+.site-header ul li{
+    border-bottom: 1.5px solid #86d6a1;
+    text-align:center;
+}
+
+.site-header li a{
+    display:block;
+    color:#384dc5;
+    padding:12px;
+    font-size:0.9rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.section p{
+    text-align: center;  
+    padding: 13px;
+    color: #e26262;
+}
+.section{
+    color:#cc8d69;   
+    width: 100%; 
+    margin: 0 auto;
+}
+/*Style of form changed */
+.form{
+    border: 1.5px solid #eb720f;
+    margin:0 auto;
+    width: 60%;
+    height:300px;
+    overflow: hidden;
+}
+
+textarea, 
+input{
+  display:block;
+  width:80%;
+  padding:6px;
+  margin:0 auto;
+  font-size:1.5rem;
+  border:1px solid rgb(147, 175, 226);
+  background:white;
+}
+/*Style of map demonstrated*/
+div.map{
+    margin:0 auto;
+    width: 100%;
+}
+div.googlemap{
+    margin:0 auto;
+    text-align: center;
+    width: 100%;
+}
+.map h2{
+    padding-bottom: 6px;
+    padding-top: 22px;
+
+}
+/*Style of bottom changed*/
+button{
+    border:1.5px solid #45e0d9;
+    background-color:#df9573;   
+    width:auto;
+    height:2rem;
+    margin:0 auto;
+    font-size:1rem;
+    font-weight:bold; 
+    color:  #5d81cf; 
+    margin-top:20px;
+    margin-left: 40px;
+}
+
+/*Style of the site-footer and navigation changed */
+.site-footer{
+    background-color: #e6cc3e; 
+}
+
+.site-footer ul{
+    display:-webkit-flex;
+    display:flex;
+}
+
+.site-footer ul li{
+    width: 33.33%;
+    background-color: #82e7b8;
+    border: 1px solid #0c61a7;  
+}
+
+.site-footer li a{
+    display:block;
+    color:#3c1bb4;
+    padding:13px;
+    font-size:0.85rem;
+    text-align: center;
+}
+.top-btn{
+    position:fixed;
+    bottom:1.5px;
+    right:13px;
+    padding:18px 0 3px 0;
+    color: #e9f0ea;
+  }
+  
+  .top-btn i:before{
+    font-size:1.5em;
+  }
+/* Style of copyright changed */
+  .copyright{
+      font-size:1.5rem;
+      padding:18px 0 3px 0;
+      margin: 9px;
+      text-align: center;
+      color: #f6f7f1;
+  }
+/*Style of navigation changed during different media screen */
+  @media screen and (min-width:780px){
+    .banner h1{
+        font-size: 2rem;
+    }
+
+    .site-header ul{
+        display:-webkit-flex;
+        display:flex;
+    }
+
+    .site-header ul li{
+        width: 33.33%;
+        border-right: 1px solid #22ceb7;
+    }
+
+    .site-header li a{
+        font-size:1rem;
+    }
+   
+  }
+
