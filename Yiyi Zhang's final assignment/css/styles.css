@@ -1,0 +1,491 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************** css reset  ***************/
+
+body{
+    line-height:1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner{
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+}
+.banner img{
+    grid-column: 1/2;
+    grid-row:1/3;
+    width:100%; 
+    padding:0;
+    border:0;
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    border-bottom: 1.5px solid peru;
+    text-align:center;
+}
+
+nav li a{
+    display:block;
+    color:black;
+    text-decoration: none;
+    padding:10px;
+    font-weight:400;
+    font-size:0.75rem;
+}
+nav a.active,
+nav a:hover{
+    font-weight:700;
+    color:lightcoral; 
+    font-size:1rem;  
+}
+/******* main nav and style banner  *******/
+
+.section1,
+.section3{
+    padding:50px 30px;;
+    background-color:palegoldenrod ;
+}
+
+.section2{
+    padding:50px 30px;;
+    background-color:white ;
+}
+.section1 h1,
+.section3 h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color:brown;
+}
+
+.section2 h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color:brown;
+}
+.section1 p,
+.section3 p{
+    color:black;
+    text-align: center;
+}
+.section2 p{
+    color:black;
+    text-align: center;
+}
+.portfolio,
+.works02,
+.works03{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;;
+    grid-gap:5%;;
+    margin-top:20px;
+}
+.portfolio .pic1,
+.works03 .pic1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width:100%;
+    box-shadow: 2px 2px 8px 1px yellow; 
+}
+.portfolio .pic2,
+.works03 .pic2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width:100%;
+    box-shadow: 2px 2px 8px 1px blue; 
+}
+.portfolio .pic3{
+    grid-column:2/3;
+    grid-row: 1/2;
+    width:100%;
+    box-shadow: 2px 2px 8px 1px #599366;     
+}
+
+button{
+    display: block;
+    background-color: orange;
+    width:50%;
+    margin:50px auto 0px;
+    padding:10px;
+    border-radius:20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color:white;
+    border:none;
+    text-align: center;
+}
+/****** section1( Innovatitive Design )  ***********/
+.works02 .pic1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width:100%;
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.6); 
+}
+.works02 .pic2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width:100%;
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.6); 
+}
+.works02 .pic3{
+    grid-column:1/3;
+    grid-row: 2/3;
+    width:100%;
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.6); 
+}
+/****** section2( Website design )  ***********/
+.works03 .pic3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width:100%;
+    box-shadow: 2px 2px 8px 1px darkcyan; 
+}
+
+.works03 .pic4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width:100%;
+    box-shadow: 2px 2px 8px 1px darkcyan; 
+}
+/****** section3( Photography )  ***********/
+.section4{
+    margin: 50px;;
+ }
+ 
+ .section4 h2{
+     font-size: 1.15rem;
+     font-weight: 700;
+     color:black;
+     text-align: center;
+     margin-bottom: 10px;
+ }
+ 
+ .section4 p{
+     color:black;
+     text-align: center;
+     margin-bottom: 10px;
+ }
+ footer{
+    background-color:paleturquoise ;
+    padding:20px;
+}
+
+footer .icon{
+	display:flex;
+	margin:0px auto;	
+	justify-content: center;	
+}
+
+.facebook,
+.ins,
+.linkedin,
+.twitter{
+	padding:0 5%;
+}
+/*********************************    HOME page above    **************************************/
+.block1,.block2{
+    padding:50px 30px;
+}
+
+.block1 h1,
+.block2 h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color:black;
+}
+
+.block1 img,
+.block2 img{
+    width:100%;
+}
+
+.block1 h2,
+.block2 h2{
+    font-size:1.25rem;
+    font-weight: 700;
+    text-align: left;
+    color:black;
+    margin-bottom: 10px;
+}
+
+.block1 p,
+.block2 p{
+    text-align: left;
+    color:black;
+}
+/*********************************    CONTACT page above    **************************************/
+.nav2{
+    margin:5% 15%;
+}
+.nav2 ul{
+    display:-webkit-flex;
+    display:flex;
+    margin-top:20px;
+}
+
+.nav2 ul li{
+    width: 33.33%;
+    border-bottom:none;
+}
+
+.nav2 li a{
+    font-size:0.5rem;
+    font-weight: 700;
+    padding:5px;
+    color:orange;  
+    border-radius:20px;
+}
+
+nav a.active,
+nav a:hover{
+    background-color:darkgoldenrod ;
+    color:white;
+}
+/********** Secondary navigation for WORKS **********/
+.part1{
+    padding:50px 30px;
+    background-color:salmon;    
+}
+
+.part1 .pic1{
+    width:100%;
+    box-shadow: 2px 2px 8px 1px salmon; 
+}
+
+.part1 .pic2{
+    width:100%;
+    box-shadow: 2px 2px 8px 1px salmon; 
+}
+.part3{
+    padding:50px 30px;
+    background-color:salmon;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:3%;
+}
+.part3 .pic1{
+    width:100%;
+    grid-column:1/2;
+    grid-row: 1/2;
+    box-shadow: 2px 2px 8px 1px blue; 
+}
+.part3 .pic2{
+    width:100%;
+    grid-column:2/3;
+    grid-row: 1/2;
+    box-shadow: 2px 2px 8px 1px blue; 
+}
+.part3 .pic3{
+    width:100%;
+    grid-column:1/2;
+    grid-row: 2/3;box-shadow: 2px 2px 8px 1px blue; 
+
+}
+.part3 .pic4{
+    width:100%;
+    grid-column:2/3;
+    grid-row: 2/3;
+    box-shadow: 2px 2px 8px 1px blue; 
+}
+/*********************************    WORKS page above    **************************************/
+@media screen and (min-width:450px){
+    .nav1 ul{
+        display:-webkit-flex;
+        display:flex;
+        margin: 5% 20%;
+    }
+
+    .nav1 ul li{
+        width: 33.33%;
+        border: 1px solid black;
+    }
+
+   .nav1 li a{
+        font-size:1rem;
+        padding:10px;
+    }
+    /*** responsive main nav ***/
+    .section1,
+    .section3{
+        display: grid;
+        grid-template-columns:1fr 2fr;
+        grid-gap:10%;
+        padding:80px 100px;
+    }
+
+    .section2{
+        display: grid;
+        grid-template-columns:2fr 1fr;
+        grid-gap:10%;
+        padding:80px 100px;
+    }
+    .section1 .d,
+    .section2 .w,
+    .section3 .p{
+        margin-top:50%;
+    }
+    .section2 .w{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .d h1,
+    .w h1,
+    .p h1{
+        font-size:1.5rem;
+    }
+    .d p,
+    .w p,
+    .p p{
+        font-size:1.25rem;
+        margin-top:20px;
+    }
+    button{
+        font-size:1.5rem;
+        grid-column: 1/3;
+        margin:30px auto;
+    }
+    /*** responsive HOME page ***/
+    .nav2 li a{
+        font-size:0.75rem;
+    }
+
+    .part1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:5%;
+        padding:80px 80px;
+    }
+
+    .part3{
+        padding:80px 80px;
+    }
+    /*** responsive WORKS page ***/
+    .block1 .e,
+    .block2 .t{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .block1 .email,
+    .block2 .idea{
+        margin-top:50%;
+    }
+    .block1 img,
+    .block2 img{
+        margin-top:5%;
+    }
+     
+    .block1 h1,
+    .block2 h1{
+        grid-column: 1/3;
+    }
+    /*** responsive CONTACT page ***/
+    @media screen and (min-width:850px){
+        .section1,
+        .section2,
+        .section3{
+            padding:100px 150px;
+        }
+
+        .d h1,
+        .w h1,
+        .p h1{
+            font-size:2.5rem;
+        }
+        .d p,
+        .w p,
+        .p p{
+            font-size:1.25rem;
+            margin-top:30px;
+        }
+        /*** responsive HOME page ***/
+        .nav2 li a{
+            font-size:1.75rem;
+        }
+
+        .part1,
+        .part3{
+            padding:120px 200px;
+        }
+
+        .part3{
+            grid-gap:3%;
+        }
+        /*** responsive WORKS page ***/
+        .block1 h1,
+        .block2 h1{
+            font-size:1.75rem;
+        }
+
+        .block1 h2,
+        .block2 h2{
+            font-size:1.25rem;
+        }
+        .block1 p,
+        .block2 p{
+            font-size:1.25rem;
+        }
+        /*** responsive CONTACT page ***/
+
+        .section4 h2{
+            font-size:1.75rem;
+            margin-bottom: 20px;;
+        }
+
+        .section4 p{
+            font-size:1.25rem;
+            margin-bottom:20px;
+        }
+    }
+}
